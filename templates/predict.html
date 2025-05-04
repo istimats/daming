@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hasil Prediksi BBM</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+</head>
+<body>
+  <div class="result-container">
+    <h2>Hasil Prediksi Konsumsi BBM</h2>
+    <p>Konsumsi BBM diperkirakan: <strong>{{ result[0] }} L/100km</strong></p>
+    <p>Jarak Tempuh: <strong>{{ result[1] }} km</strong></p>
+    <p>Total Perkiraan BBM: <strong>{{ result[2] }} liter</strong></p>
+    <a href="/">Kembali ke Form</a>
+  </div>
+</body>
+</html>

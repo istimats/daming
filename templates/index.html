@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediksi BBM</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  
+  <form method="POST" action="/predict">
+    <h2>Form Prediksi Penggunaan BBM</h2>
+    Engine Size: <input name="engine_size" required><br>
+    Cylinders: <input name="cylinders" required><br>
+    Fuel Type: 
+    <select name="fuel_type">
+      <option value="Z">Bensin</option>
+      <option value="D">Diesel</option>
+      <option value="X">Premium</option>
+      <option value="E">Etanol</option>
+    </select><br>
+    Transmission: <input name="transmission" required placeholder="misal AS5"><br>
+    Jarak Tempuh (km): <input name="distance" required><br>
+    <button type="submit">Prediksi</button>
+  </form>
+</body>
+</html>
